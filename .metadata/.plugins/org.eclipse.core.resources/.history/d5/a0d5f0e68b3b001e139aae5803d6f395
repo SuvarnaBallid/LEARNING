@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class TaxCalculator {
+
+	public static void main(String[] args) {
+Scanner scan=new Scanner(System.in);
+System.out.println("Enter the purchase amount:");
+double purchaseamount=scan.nextDouble();
+System.out.println("Enter tax rate(In decimal form:)");
+double taxrate=scan.nextDouble();
+TaxCalculatorApp t1=new TaxCalculatorApp() ;
+double totalAmount=t1.calculateToTotalwithTax(purchaseamount,taxrate);
+System.out.println("Total cost including tax:"+totalAmount);
+	}
+
+}
